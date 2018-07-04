@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+.container-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1100px 100px;
+  grid-template-rows: 100%;
+  grid-template-areas:
+  'Filhobotao1 Filhobotao2'
+  ;
+
+
+}
+
+body{background:url('../img/inicio.jpg') no-repeat;}
+.box{margin-top: 5px;}
+
+.Filhobotao1{
+  grid-area: Filhobotao1;
+
+}
+
+.Filhobotao2{
+  grid-area: Filhobotao2;
+
+}
+
+.cadastro{margin-left: 900px;}
+.botao{background-color: rgba(255,255,255,0); font-size: 15px; color: #fff; border: 3px solid #fff; cursor: pointer; width: 150px; height: 35px;}

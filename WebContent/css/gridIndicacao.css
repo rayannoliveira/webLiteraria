@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+
+.container-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 955px;
+  grid-template-rows: 262px 400px;
+  grid-template-areas:
+  	'profile cabecalho'
+  	'profile indicacao'
+  ;
+}
+
+
+/*EDIÇÃO DO PERFIL*/
+.profile{grid-area: profile; background: url('../img/ajuste.jpg');}
+.background{background-color: rgba(200,200,200,0.5);}
+.perfil{width: 150px; margin: auto; }
+.perfil img{width: 100%;}
+.identificacao{padding-bottom: 35px;}
+.identificacao p{margin: 20px 0px 25px 20px; color: #fff;}
+.identificacao a{color: #fff; margin-left: 20px; }
+/*MENU*/
+.menu{margin-top: 25px;}
+.op{background-color: rgba(210,210,210,0.9); height: 60px; margin-bottom: 30px;  padding-top: 20px; box-sizing: border-box;}
+.op p{text-align: center;}
+.menu a{color: #3E3E3C;}
+
+/*EDIÇÃO DO CABEÇALHO*/
+.cabecalho{grid-area: cabecalho; padding: 15px; }
+.texto1{text-align: center; margin-bottom: 20px;  }
+.texto1 p{font-size: 25px; }
+.titulo h1{text-align: center; font-family: 'Caveat', cursive; font-size: 70px;}
+
+/*EDIÇÃO DA ÁREA DE INDICAÇÃO DE LIVROS*/
+.indicacacao{grid-areas: indicacao}
+
+.containerIndicacao-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+ 		'horario'
+ 		'formulario'
+  ;
+}
+
+
+
+.horario{grid-area: horario; text-align: center; margin-bottom: 10px;}
+
+/*EDIÇÃO DO FORMULARIO*/
+.formulario{grid-area: formulario;}
+.formulario img{ }
+#livro{}
+
+.gridForm{
+	  width: 100%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3% ;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+ 		'imagem1 imagem2 imagem3'
+ 		'botao botao botao'
+  ;
+}
+
+.boxf img{margin-left: 30px;}
+.boxf input{width: 30px; backround-color: blue;}
+
+#livro{display: ;}
+.imagem1{grid-area: imagem1; }
+.imagem2{grid-area: imagem2;}
+.imagem3{grid-area: imagem3;}
+.img{background-color: red;}
+.botao{grid-area: botao;}
+.votar{width: 200px; height: 50px; margin-top: 30px; margin-left: 380px; font-size: 20px;}

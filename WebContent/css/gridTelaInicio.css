@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+
+.container-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 955px;;
+  grid-template-rows: 262px 400px;
+  grid-template-areas:
+  	'profile cabecalho'
+  	'profile resenha'
+  ;
+}
+
+.box{;}
+/*EDIÇÃO DO PERFIL*/
+.profile{grid-area: profile; background: url('../img/ajuste.jpg');}
+.background{background-color: rgba(200,200,200,0.5);}
+.perfil{width: 150px; margin: auto; }
+.perfil img{width: 100%;}
+.identificacao{padding-bottom: 35px;}
+.identificacao p{margin: 20px 0px 25px 20px; color: #fff;}
+.identificacao a{color: #fff; margin-left: 20px; }
+/*MENU*/
+.menu{margin-top: 25px;}
+.op{background-color: rgba(210,210,210,0.9); height: 60px; margin-bottom: 30px;  padding-top: 20px; box-sizing: border-box;}
+.op p{text-align: center;}
+.menu a{color: #3E3E3C;}
+
+/*EDIÇÃO DO CABEÇALHO*/
+.cabecalho{grid-area: cabecalho; padding: 15px;}
+.texto1{text-align: center; margin-bottom: 20px;  }
+.texto1 p{font-size: 25px; }
+.titulo h1{text-align: center; font-family: 'Caveat', cursive; font-size: 100px;}
+
+/*ÁREA DA RESENHA*/
+.resenha{grid-area: resenha;  }
+.containerResenha{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 600px 200px;;
+  grid-template-rows: 100px 200px 20px;
+  grid-template-areas:
+  	'tituloResenha capa'
+  	'textoResenha capa'
+  	'hora capa'
+  ;
+}
+
+.boxRe{}
+.tituloResenha{grid-area: tituloResenha; padding-top: 30px;}
+.tituloResenha h3{text-align: center; letter-spacing: 4px;}
+.textoResenha{grid-area: textoResenha; padding: 10px;}
+.textoResenha p{text-align: center;}
+.capa{grid-area: capa;}
+.capa img{width: 100%;}
+.hora{grid-area: hora;}
+.hora p{text-align: center;}

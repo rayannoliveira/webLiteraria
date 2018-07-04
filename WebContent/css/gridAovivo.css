@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+.container-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 955px;
+  grid-template-rows: 262px 400px;
+  grid-template-areas:
+  	'profile cabecalho'
+  	'profile aoVivo'
+  ;
+}
+
+
+/*EDIÇÃO DO PERFIL*/
+.profile{grid-area: profile; background: url('../img/ajuste.jpg');}
+.background{background-color: rgba(200,200,200,0.5);}
+.perfil{width: 150px; margin: auto; }
+.perfil img{width: 100%;}
+.identificacao{padding-bottom: 35px;}
+.identificacao p{margin: 20px 0px 25px 20px; color: #fff;}
+.identificacao a{color: #fff; margin-left: 20px; }
+/*MENU*/
+.menu{margin-top: 25px;}
+.op{background-color: rgba(210,210,210,0.9); height: 60px; margin-bottom: 30px;  padding-top: 20px; box-sizing: border-box;}
+.op p{text-align: center;}
+.menu a{color: #3E3E3C;}
+
+/*EDIÇÃO DO CABEÇALHO*/
+.cabecalho{grid-area: cabecalho; padding: 15px; }
+.texto1{text-align: center; margin-bottom: 20px;  }
+.texto1 p{font-size: 25px; }
+.titulo h1{text-align: center; font-family: 'Caveat', cursive; font-size: 70px;}
+
+/*EDIÇÃO DA ÁREA DE INDICAÇÃO DE LIVROS*/
+.aoVivo{grid-area: aoVivo;}
+
+.container-aoVivo{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: 35px 250px 100px;
+  grid-template-areas: 
+ 		'txt txt'
+ 		'img area-comentarios'
+ 		'img comentar'
+  ;
+}
+
+.boxi{ font-family: 'arial','verdana', sans-serif;}
+/*edição do texto ao vivo*/
+.txt{grid-area: txt; text-align: center;}
+/*edição da imagem*/
+.img{grid-area: img; padding-left: 70px; padding-top:10px;}
+.foto-capa{width: 220px;}
+/*edição da area de comentarios*/
+.area-comentarios{grid-area: area-comentarios; padding:10px;}
+.comentarios{border: 10px solid black; height: 200px; padding: 5px 0 0 70px; overflow: scroll;}
+.comentarios p{background-color: #454545; color: #fff; width: 400px; margin-bottom:10px; overflow: initial; }
+.img{grid-area: img;}
+/*edição da area de comentar*/
+.comentar{grid-area: comentar; padding: 10px; font-family: 'Caveat', cursive;}
+.campo{width: 250px; height: 35px; font-size: 17px; background-color: #454545; border: none; color: #fff; padding: 5px; box-sizing: border-box;}
+.campo:focus{outline: none;}
+.btn{width: 120px; height: 30px; margin-left:20px; border: none; color: #fff; background-color: #454545; font-size: 15px; font-family: 'Caveat', cursive;}

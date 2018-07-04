@@ -1,0 +1,34 @@
+.container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80% ;
+  grid-template-rows: 60px 600px ;
+  grid-template-areas:
+  	'filho-header filho-header'
+  	'filho-menu filho-formulario'
+}
+
+
+.filho-header{grid-area: filho-header; padding-top: 5px; padding-left: 60px; background-color: #584D4B; color: #fff; font-family: 'Caveat', cursive; font-size: 35px;}
+
+/*edição do menu*/
+.filho-menu{grid-area: filho-menu;  background-color: #fff; border-right: 1px solid #CDC3B7;}
+.suaConta{ height: 60px; padding-left: 10px; font-size: 23px; padding-top: 15px;}
+.menu-op{ height: 40px; color:#584D4B; padding-left: 10px; padding-top:10px; border-top: 1px solid #CDC3B7;  background-color: #fff;  font-family: 'arial'; }
+.menu-op:hover{background-color:#CBC9C8;}
+.baixo{border-bottom: 1px solid #CDC3B7;}
+/*edição do formulario*/
+.filho-formulario{grid-area: filho-formulario; font-family: 'arial'; background-color: #F8F8F8; padding-left: 150px;}
+.txt-editar{height: 200px; padding: 0 0 0 0; color: #222326;}
+.red{color: red;}
+.caixa-form{background-color: #fff; width: 600px; height: 310px; padding-top:20px; padding-left: 250px; color:#584D4B;}
+.inp{width: 350px; height: 30px; margin-top: 5px; font-size: 15px; padding:5px;}
+.inp:focus{outline:none; border: 1px solid #222326;}
+.btn{cursor: pointer; font-size: 15px; color: #fff; width: 100px; height: 30px; border-radius: 5px; text-align: center; border: none; margin: 30px 0; margin-left:45px;}
+.btn:focus{outline:none;}
+.salvar{background-color: #222326;}
+.cancelar{border: 1px solid #222326; background-color: #fff; color: #222326;}
+/*edição do apagar conta*/
+.lista{ width:500px; margin-left:40px;}
+.lista li{margin-bottom: 5px;}
+.btnApagar{width: 250px; height: 40px;  background-color: #D73D33; color: #fff; font-size: 18px; border:1px solid black; border-radius: 5px; cursor: pointer; margin-top: 150px;}
